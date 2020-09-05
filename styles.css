@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -24,7 +24,7 @@
 
 .container:hover .img {
   -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
 
 .container .img {
@@ -33,50 +33,56 @@
   background-color: red;
   margin: auto;
   border-radius: 10px;
-  background-image: url(../basicCarousel/images/item1.jpg);
+  background-image: url(./images/item1.jpg);
   background-size: cover;
   -webkit-box-shadow: 1px 2px 5px #550b55, 2px 7px 10px black;
-          box-shadow: 1px 2px 5px #550b55, 2px 7px 10px black;
+  box-shadow: 1px 2px 5px #550b55, 2px 7px 10px black;
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
   -webkit-animation: autos 9000ms infinite;
-          animation: autos 9000ms infinite;
+  animation: autos 9000ms infinite;
 }
 
 @-webkit-keyframes autos {
   0% {
-    background-image: url(../basicCarousel/images/item1.jpg);
+    background-image: url(./images/item1.jpg);
     background-size: cover;
   }
+
   35% {
-    background-image: url(../basicCarousel/images/item2.jpg);
+    background-image: url(./images/item2.jpg);
     background-size: cover;
   }
+
   65% {
-    background-image: url(../basicCarousel/images/item3.jpg);
+    background-image: url(./images/item3.jpg);
     background-size: cover;
   }
+
   100% {
-    background-image: url(../basicCarousel/images/item1.jpg);
+    background-image: url(./images/item1.jpg);
     background-size: cover;
   }
 }
 
 @keyframes autos {
   0% {
-    background-image: url(../basicCarousel/images/item1.jpg);
+    background-image: url(./images/item1.jpg);
     background-size: cover;
   }
+
   35% {
-    background-image: url(../basicCarousel/images/item2.jpg);
+    background-image: url(./images/item2.jpg);
     background-size: cover;
   }
+
   65% {
-    background-image: url(../basicCarousel/images/item3.jpg);
+    background-image: url(./images/item3.jpg);
     background-size: cover;
   }
+
   100% {
-    background-image: url(../basicCarousel/images/item1.jpg);
+    background-image: url(./images/item1.jpg);
     background-size: cover;
   }
 }
@@ -98,4 +104,5 @@
 .container .next {
   right: 10%;
 }
+
 /*# sourceMappingURL=styles.css.map */

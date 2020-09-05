@@ -3,7 +3,7 @@ let next = document.querySelector(".next");
 let image = document.querySelector(".img");
 let h1 = document.querySelector("h1");
 let span = document.querySelector(".span");
-let path = ["../basicCarousel/images/item1.jpg", "../basicCarousel/images/item2.jpg", "../basicCarousel/images/item3.jpg"];
+let path = ["./images/item1.jpg", "./images/item2.jpg", "./images/item3.jpg"];
 // let x = 0;
 // image.style.cssText = "background: url(" + path[0] + ")";
 
