@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.container {
+    background-color: plum;
+    height: 100vh;
+    padding: 2rem;
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    h1 {
+        position: absolute;
+        color: rgba(255, 255, 255, 0.116);
+        font-size: 0.1rem;
+    }
+
+    &:hover {
+        .img {
+            animation: none;
+        }
+    }
+
+    .img {
+        width: 80%;
+        height: 100%;
+        background-color: red;
+        margin: auto;
+        border-radius: 10px;
+        background-image: url(../basicCarousel/images/item1.jpg);
+        background-size: cover;
+        box-shadow: 1px 2px 5px rgb(85, 11, 85), 2px 7px 10px black;
+        transition: 500ms ease-in-out;
+        animation: autos 9000ms infinite;
+
+    }
+
+    @keyframes autos {
+        0% {
+            background-image: url(../basicCarousel/images/item1.jpg);
+            background-size: cover;
+        }
+
+        35% {
+            background-image: url(../basicCarousel/images/item2.jpg);
+            background-size: cover;
+        }
+
+        65% {
+            background-image: url(../basicCarousel/images/item3.jpg);
+            background-size: cover;
+        }
+
+        100% {
+            background-image: url(../basicCarousel/images/item1.jpg);
+            background-size: cover;
+        }
+    }
+
+    button {
+        height: 4em;
+        width: 2em;
+        border: none;
+        outline-width: 0;
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+    }
+
+    .previous {
+        left: 10%;
+    }
+
+    .next {
+        right: 10%;
+    }
+
+
+}
