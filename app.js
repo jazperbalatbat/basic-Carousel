@@ -4,18 +4,7 @@ let image = document.querySelector(".img");
 let h1 = document.querySelector("h1");
 let span = document.querySelector(".span");
 let path = ["./images/item1.jpg", "./images/item2.jpg", "./images/item3.jpg"];
-// let x = 0;
-// image.style.cssText = "background: url(" + path[0] + ")";
 
-// function interval(x) {
-//     if (x < 3)
-//         image.style.cssText = "background: url(" + path[x] + "); background-size: cover";
-
-//     else {
-//         h1.innerHTML = 0;
-//         image.style.cssText = "background: url(" + path[0] + "); background-size: cover";
-//     }
-// }
 function intervals(y) {
     switch (y) {
         case 1:
